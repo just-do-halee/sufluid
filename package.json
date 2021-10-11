@@ -1,0 +1,38 @@
+{
+  "name": "sufluid",
+  "version": "0.1.0",
+  "description": "",
+  "author": "just-do-halee <just.do.halee@gmail.com>",
+  "license": "MIT",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "build": "rimraf dist && rollup --config rollup.config.ts --configPlugin typescript",
+    "start": "npm run build -- --watch"
+  },
+  "keywords": [
+    "dom",
+    "framework",
+    "web-components",
+    "react",
+    "angular",
+    "vue",
+    "svelte"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just-do-halee/sufluid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/just-do-halee/sufluid/issues"
+  },
+  "homepage": "https://github.com/just-do-halee/sufluid#readme",
+  "devDependencies": {
+    "@open-wc/building-rollup": "^1.10.0",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "deepmerge": "^4.2.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.58.0",
+    "typescript": "^4.4.3"
+  }
+}
